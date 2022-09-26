@@ -95,6 +95,8 @@ GEM
     erubi (1.10.0)
     eventmachine (1.2.7)
     ffi (1.15.5)
+    font-awesome-sass (6.2.0)
+      sassc (~> 2.0)
     forwardable-extended (2.6.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -279,6 +281,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  font-awesome-sass (~> 6.2.0)
   http_parser.rb (~> 0.6.0)
   jbuilder
   jekyll (~> 4.2.2)

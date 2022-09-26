@@ -14,5 +14,12 @@
  *= require_self
  */
 
- // CSS PARTIALS
- @import "pages/home";
+// External Libraries
+@import "font-awesome";
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+// font-family: 'Bungee Spice', cursive;
+
+// CSS PARTIALS
+@import "pages/home";
