@@ -48,10 +48,19 @@ gem "sassc-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+
+# ===============================================================
 # >>>>>  NEW GEMS:
+
+# Bootstrap and PopperJs
+gem 'bootstrap', '~> 5.2', '>= 5.2.1'
+gem 'popper_js', '~> 2.11.5'
 
 # Font Awesome
 gem "font-awesome-sass", "~> 6.2.0"
+
+# jquery
+gem 'jquery-rails', '~> 4.5'
 
 
 group :development, :test do
