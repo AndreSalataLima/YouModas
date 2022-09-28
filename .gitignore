@@ -39,3 +39,10 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

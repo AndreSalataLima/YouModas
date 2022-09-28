@@ -60,7 +60,14 @@ gem 'popper_js', '~> 2.11.5'
 gem "font-awesome-sass", "~> 6.2.0"
 
 # jquery
-gem 'jquery-rails', '~> 4.5'
+# gem 'jquery-rails', '~> 4.5'
+
+# Webpack to manage JavaScript modules
+# gem 'webpack-rails', '~> 0.9.11'
+gem 'webpacker', '~> 5.0'
+
+# # This gem provides rails-ujs driver for Rails applications.
+# gem 'rails-ujs', '~> 0.1.0'
 
 
 group :development, :test do
