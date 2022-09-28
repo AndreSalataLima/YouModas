@@ -252,3 +252,13 @@ body, ul, ol, dl {
 
 
 // TESTS //
+
+
+.js-scroll {
+  opacity: 0;
+  transition: 1s;
+}
+.js-scroll-active {
+  opacity: 1;
+  transition: 1s;
+}
