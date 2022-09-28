@@ -5,7 +5,6 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("bootstrap")
-
 import { initSmoothScroll } from "./plugins/smoothScroll"
 
 // import Rails from "@rails/ujs"
@@ -21,14 +20,14 @@ import { initSmoothScroll } from "./plugins/smoothScroll"
 // import "controllers"
 // import "channels"
 
-
+// initSmoothScroll();
 // Rails.start()
 // Turbolinks.start()
 // ActiveStorage.start()
 
 
 document.addEventListener('turbolinks:load', () => {
-  initSmoothScroll()
+  // initSmoothScroll()
 });
 
 // Configure Stimulus development experience

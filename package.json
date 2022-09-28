@@ -7,7 +7,11 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.1.0",
     "@hotwired/turbo-rails": "^7.2.0",
+    "@popperjs/core": "^2.11.6",
+    "@rails/activestorage": "^7.0.4",
+    "@rails/ujs": "^7.0.4",
     "@rails/webpacker": "5.4.3",
+    "bootstrap": "5.2.1",
     "jquery": "^3.6.1",
     "rails-ujs": "^5.2.8-1",
     "turbolinks": "^5.2.0",
