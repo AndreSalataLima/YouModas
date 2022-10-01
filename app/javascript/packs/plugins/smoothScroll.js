@@ -1,6 +1,6 @@
 function initSmoothScroll() {
   const cards = document.querySelectorAll('.js-scroll');
-  const halfWindow = window.innerHeight * 0.5;
+  const halfWindow = window.innerHeight * 0.7;
 
     cards.forEach((card) => {
       const cardsTop = card.getBoundingClientRect().top;
@@ -14,8 +14,6 @@ function initSmoothScroll() {
     })
 
 }
-// initSmoothScroll()
-
 
 window.addEventListener('scroll', initSmoothScroll);
 initSmoothScroll()

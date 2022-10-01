@@ -1,7 +1,7 @@
 function initNavShow() {
   const divider = document.querySelector(".nav-divider");
   const nav = document.querySelector(".js-nav");
-  const isCloseToTop = divider.getBoundingClientRect().top < 60;
+  const isCloseToTop = divider.getBoundingClientRect().top < 0;
 
     if (isCloseToTop) {
       nav.classList.replace("js-navDontShow", "js-navShow");
@@ -10,7 +10,6 @@ function initNavShow() {
     }
 
 }
-initNavShow()
 
 window.addEventListener('scroll', initNavShow);
 initNavShow()

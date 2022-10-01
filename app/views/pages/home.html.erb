@@ -249,7 +249,9 @@
 <%# FOOTER %>
 
 <div class="footer-container">
-  <h4 class="header-logo">You</h4>
+  <%= link_to "/", class: "footer-logo" do %>
+    <%= image_tag "logo-footer.png"%>
+  <% end %>
   <div class="footer-medias">
     <a href="/"><i class="fa-brands fa-square-facebook medias-icon"></i></a>
     <a href="/"><i class="fa-brands fa-square-instagram medias-icon"></i></a>

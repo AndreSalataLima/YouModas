@@ -6,14 +6,14 @@ body, ul, ol, dl {
 
 // HEADER //
 .header-container {
-  padding: 15px 40px;
+  padding: 15px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .header-logo img {
-  width: 120px;
+  width: 80px;
 }
 
 .header-search-bar {
@@ -85,6 +85,7 @@ body, ul, ol, dl {
 
 .js-navShow {
   background-color: white;
+  // box-shadow: 0 1px rgba(171, 109, 109, 0.06);
   display: grid;
   position: sticky;
   top: 0;
@@ -227,6 +228,14 @@ body, ul, ol, dl {
   margin: 50px 0;
 }
 
+.footer-logo {
+  padding-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 140px;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-around;
@@ -241,10 +250,10 @@ body, ul, ol, dl {
 
 .medias-icon {
   font-size: 28px;
-  color: #E5625E;
+  color: #f6c1b6;
 
     &:hover {
-      color: aqua;
+      color: #fff1ee;
     }
 }
 
