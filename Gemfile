@@ -43,10 +43,32 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
+
+
+# ===============================================================
+# >>>>>  NEW GEMS:
+
+# Bootstrap and PopperJs
+gem 'bootstrap', '~> 5.2', '>= 5.2.1'
+gem 'popper_js', '~> 2.11.5'
+
+# Font Awesome
+gem "font-awesome-sass", "~> 6.2.0"
+
+# jquery
+# gem 'jquery-rails', '~> 4.5'
+
+# Webpack to manage JavaScript modules
+# gem 'webpack-rails', '~> 0.9.11'
+gem 'webpacker', '~> 5.0'
+
+# # This gem provides rails-ujs driver for Rails applications.
+# gem 'rails-ujs', '~> 0.1.0'
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

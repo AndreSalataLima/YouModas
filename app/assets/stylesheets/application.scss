@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+// External Libraries
+@import "font-awesome";
+@import "bootstrap";
+
+// Font imports
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+// font-family: 'Bungee Spice', cursive;
+
+// CSS PARTIALS
+@import "pages/home";
