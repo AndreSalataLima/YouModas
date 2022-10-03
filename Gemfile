@@ -59,6 +59,8 @@ gem 'popper_js', '~> 2.11.5'
 # Font Awesome
 gem "font-awesome-sass", "~> 6.2.0"
 
+# Gem devise:
+gem "devise"
 # jquery
 # gem 'jquery-rails', '~> 4.5'
 
