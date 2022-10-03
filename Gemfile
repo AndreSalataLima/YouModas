@@ -54,7 +54,7 @@ gem "sassc-rails"
 
 # Bootstrap and PopperJs
 gem 'bootstrap', '~> 5.2', '>= 5.2.1'
-gem 'popper_js', '~> 2.11.5'
+# gem 'popper_js', '~> 2.11.5'
 
 # Font Awesome
 gem "font-awesome-sass", "~> 6.2.0"
@@ -64,7 +64,7 @@ gem "font-awesome-sass", "~> 6.2.0"
 
 # Webpack to manage JavaScript modules
 # gem 'webpack-rails', '~> 0.9.11'
-gem 'webpacker', '~> 5.0'
+# gem 'webpacker', '~> 5.0'
 
 # # This gem provides rails-ujs driver for Rails applications.
 # gem 'rails-ujs', '~> 0.1.0'
