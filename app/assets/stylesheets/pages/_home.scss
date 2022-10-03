@@ -1,0 +1,313 @@
+body, ul, ol, dl {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// HEADER //
+.header-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 80px;
+}
+
+.header-search-bar {
+  padding: 0;
+  margin: 0;
+}
+#site-search {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.header-search-btn {
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+
+// DIVIDER
+
+.divider-container {
+  display: grid;
+  place-items: center;
+}
+
+.nav-divider {
+  background-color: #e7a79a;
+  height: 2px;
+  width: 60vw;
+}
+
+
+// NAV LINKS //
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-list-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-each-link {
+  font-size: 1rem;
+  padding: 10px 25px;
+  margin: 10px 0;
+  color: #C5C5C5;
+  text-decoration: none;
+  align-items: center;
+
+    &:hover {
+      color: white;
+      background-color: #e7a79a;
+      border-radius: 3px;
+    }
+}
+
+
+// JavaScript animation for popup the nav-links
+
+.js-navDontShow{
+  display: none;
+}
+
+.js-navShow {
+  background-color: white;
+  // box-shadow: 0 1px rgba(171, 109, 109, 0.06);
+  display: grid;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+// BANNER //
+
+.main-banner {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.main-banner-img {
+  // max-width: 100%;
+  width: 100vw;
+  height: 70vh;
+}
+
+// CARDS
+
+.products-cards-title {
+  color: #C5C5C5;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+
+.cards-products-container {
+  display: flex;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  height: auto;
+  width: 100vw;
+}
+
+.cards-product {
+  background-image: linear-gradient(#f6c1b6, #fff1ee);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(176, 176, 176, 0.242);
+  // height: 400px;
+}
+
+.cards-img {
+  width: fit-content;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.cards-title {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.cards-price {
+  font-size: 16px;
+}
+
+.cards-btn {
+  display: inline-block;
+  color: #dfdfdf;
+  background-color: #faa595;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid rgba(176, 176, 176, 0.344);
+
+  &:hover {
+    color: white;
+  }
+}
+
+
+// GRID IMAGES CARD //
+
+.grid-img-container {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.grid-images {
+  display: grid;
+  grid-template-areas:
+    "img1 img3"
+    "img2 img3";
+  grid-template-columns: 45vw 45vw;
+  height: 80vh;
+  width: fit-content;
+  gap: 5px;
+}
+
+.grid-images > a[data-gridimgs="img3"] {
+  grid-area: img3;
+}
+
+
+
+[data-gridimgs="img1"] {
+  background-image: url("https://images.unsplash.com/photo-1526857240824-92be52581d9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(176, 176, 176, 0.344);
+}
+
+[data-gridimgs="img2"] {
+  background-image: url("https://images.unsplash.com/photo-1525373612132-b3e820b87cea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+  background-size: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(176, 176, 176, 0.344);
+  background-position: center;
+}
+
+[data-gridimgs="img3"] {
+  background-image: url("https://images.unsplash.com/photo-1613966570650-add3cf83aa83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-size: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(176, 176, 176, 0.344);
+}
+
+
+// FOOTER //
+
+.footer-divider {
+  background-color: #e7a79a;
+  height: 2px;
+  width: 60vw;
+  margin: 50px 0;
+}
+
+.footer-logo {
+  padding-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 140px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-medias {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.medias-icon {
+  font-size: 28px;
+  color: #f6c1b6;
+
+    &:hover {
+      color: #fff1ee;
+    }
+}
+
+.copyrigth {
+  display: grid;
+  place-items: center;
+  margin: 10px 0;
+}
+
+.copyrigth-text {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+
+
+// TESTS //
+
+
+.js-scroll {
+  opacity: 0;
+  transition: 1s;
+}
+.js-scroll-active {
+  opacity: 1;
+  transition: 1s;
+}
+
+
+// Products cards with boostrap
+.bstest-cards {
+  background-image: linear-gradient(#f6c1b6, #fff1ee);
+  text-decoration: none;
+  color: black;
+
+    &:hover {
+      color: rgb(62, 62, 62);
+    }
+}
+
+.card.title {
+  padding: 0;
+}
+
+.card-price {
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+}
+
+.card-body {
+  padding: 10px;
+  margin: 0;
+}
+
+
+// carousel test //
