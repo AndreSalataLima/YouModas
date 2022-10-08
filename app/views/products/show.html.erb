@@ -1,3 +1,33 @@
+<%# HEADER  %>
+<header class="header-container">
+  <%= link_to "/", class: "header-logo" do %>
+    <%= image_tag "logo.png"%>
+  <% end %>
+  <div class="header-search-bar">
+    <input type="search" id="site-search" name="q">
+    <button class="header-search-btn">Search</button>
+  </div>
+</header>
+
+<%# DIVIDER %>
+<div class="divider-container">
+  <span class="nav-divider"></span>
+</div>
+
+<%# NAV-LINKS  %>
+<nav class="js-nav" js-navDontShow">
+  <ul class="nav-list">
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Blusas</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Calças</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Saias</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Shorts</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Vestidos</a></li>
+    <li class="nav-list-links"><a href="/" class="nav-each-link">Acessórios</a></li>
+  </ul>
+</nav>
+
+<%# PRODUCT CARD %>
+
 <div class="card-product">
   <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans">
   <div class="card-product-infos">
@@ -5,4 +35,30 @@
     <p class="price">R$129.99</p>
     <p>Some text about the jeans..</p>
   </div>
+</div>
+
+
+<%# DIVIDER %>
+
+<div class="divider-container">
+  <span class="footer-divider"></span>
+</div>
+
+<%# FOOTER %>
+
+<div class="footer-container">
+  <%= link_to "/", class: "footer-logo" do %>
+    <%= image_tag "logo-footer.png"%>
+  <% end %>
+  <div class="footer-medias">
+    <a href="/"><i class="fa-brands fa-square-facebook medias-icon"></i></a>
+    <a href="/"><i class="fa-brands fa-square-instagram medias-icon"></i></a>
+    <a href="/"><i class="fa-brands fa-square-whatsapp medias-icon"></i></a>
+    <a href="/"><i class="fa-brands fa-square-twitter medias-icon"></i></a>
+  </div>
+
+</div>
+
+<div class="copyrigth">
+  <h4 class="copyrigth-text">© 2022-2023 You Moda Feminina, Inc.</h4>
 </div>
