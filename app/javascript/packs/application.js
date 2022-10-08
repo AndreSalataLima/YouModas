@@ -9,8 +9,6 @@ require("util")
 import { initSmoothScroll } from "./plugins/smoothScroll"
 import { initNavShow } from "./plugins/initNavShow"
 
-<<<<<<< HEAD
-=======
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
@@ -28,7 +26,6 @@ import "bootstrap"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
->>>>>>> 5d5a8134f7bfe4a82f01c2a6ed5558575b65a2da
 
 document.addEventListener('turbolinks:load', () => {
 
