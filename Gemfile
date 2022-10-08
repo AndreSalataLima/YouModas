@@ -54,7 +54,7 @@ gem "sassc-rails"
 
 # Bootstrap and PopperJs
 gem 'bootstrap', '~> 5.2', '>= 5.2.1'
-gem 'popper_js', '~> 2.11.5'
+# gem 'popper_js', '~> 2.11.5'
 
 # Font Awesome
 gem "font-awesome-sass", "~> 6.2.0"
@@ -63,7 +63,7 @@ gem "font-awesome-sass", "~> 6.2.0"
 # gem 'jquery-rails', '~> 4.5'
 
 # Webpack to manage JavaScript modules
-# gem 'webpack-rails', '~> 0.9.11'
+gem 'webpack-rails', '~> 0.9.11'
 gem 'webpacker', '~> 5.0'
 
 # # This gem provides rails-ujs driver for Rails applications.
@@ -124,3 +124,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+
+#includ webpacker for js

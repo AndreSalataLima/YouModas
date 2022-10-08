@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ @import "product";
+ @import "product_show";
 
 // External Libraries
 @import "font-awesome";
