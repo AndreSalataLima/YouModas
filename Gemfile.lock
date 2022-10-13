@@ -169,11 +169,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-arm64-darwin)
       racc (~> 1.4)
-<<<<<<< HEAD
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
-=======
->>>>>>> 5d5a8134f7bfe4a82f01c2a6ed5558575b65a2da
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
     pathutil (0.16.2)
