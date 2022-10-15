@@ -156,12 +156,12 @@
               <!-- Full-width images with number text -->
               <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                  <img src="img_woods_wide.jpg" style="width:100%">
+                  <img src="https://m2.jeans-industry.fr/287681-large_bis/jeans-mom.jpg" style="width:100%">
               </div>
 
               <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                  <img src="img_5terre_wide.jpg" style="width:100%">
+                  <img src="https://img01.ztat.net/article/spp-media-p1/99175a47607b38028952cdfa39a16558/f7db34e1888749b29440b1eb9fd9b78c.jpg?imwidth=1800" style="width:100%">
               </div>
 
               <div class="mySlides">
@@ -196,22 +196,22 @@
               <!-- Thumbnail images -->
               <div class="row">
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  <img class="demo cursor" src="https://m2.jeans-industry.fr/287681-large_bis/jeans-mom.jpg" alt="Denim Jeans" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
                 </div>
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  <img class="demo cursor" src="https://img01.ztat.net/article/spp-media-p1/99175a47607b38028952cdfa39a16558/f7db34e1888749b29440b1eb9fd9b78c.jpg?imwidth=1800" alt="Denim Jeans" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
                 </div>
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                 </div>
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                 </div>
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
                 </div>
                 <div class="column">
-                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans"" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                  <img class="demo cursor" src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                 </div>
               </div>
             </div>
@@ -275,3 +275,35 @@
           </div>
         </div>
       </section>
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
