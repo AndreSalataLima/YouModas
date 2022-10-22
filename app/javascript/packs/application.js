@@ -8,6 +8,7 @@
 require("util")
 import { initSmoothScroll } from "./plugins/smoothScroll"
 import { initNavShow } from "./plugins/initNavShow"
+import { initSlides } from "./plugins/initSlides"
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
