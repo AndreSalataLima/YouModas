@@ -310,4 +310,26 @@ body, ul, ol, dl {
 }
 
 
-// carousel test //
+// product slide test //
+
+
+.container-slides {
+  justify-items: center;
+  align-items: center;
+  background-color: aqua;
+  height: 700px;
+  margin: 50px;
+  display: grid;
+  grid-template-areas:
+    "slide01 slide02";
+  grid-template-columns: 45vw 45vw;
+}
+
+
+.product-imgs-1 {
+  background-color: rgb(0, 255, 60);
+}
+
+.product-imgs-2 {
+  background-color: rgb(255, 0, 247);
+}
