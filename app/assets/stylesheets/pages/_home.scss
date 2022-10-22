@@ -338,6 +338,7 @@ body, ul, ol, dl {
 .thumb-slide-horizontal {
   display: flex;
   list-style: none;
+  // justify-content: center;
 }
 
 .thumb-slide-horizontal li {
@@ -355,6 +356,8 @@ body, ul, ol, dl {
 .info {
   grid-column: 2;
   grid-row: 1/2;
+  // display: grid;
+  // place-items: center;
 }
 
 
