@@ -340,6 +340,18 @@ body, ul, ol, dl {
   list-style: none;
 }
 
+.thumb-slide-horizontal li {
+  cursor: pointer;
+  opacity: 0.75;
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid;
+    }
+}
+
+
+
 .info {
   grid-column: 2;
   grid-row: 1/2;
