@@ -11,9 +11,9 @@ sliderContainer.addEventListener("mousedown", (e) => {
   sliderContainer.style.cursor = "grabbing";
 });
 
-sliderContainer.addEventListener("mouseenter", () => {
-  sliderContainer.style.cursor = "grab";
-});
+// sliderContainer.addEventListener("mouseenter", () => {
+//   // sliderContainer.style.cursor = "grab";
+// });
 
 sliderContainer.addEventListener("mouseup", () => {
   sliderContainer.style.cursor = "grab";
