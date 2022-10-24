@@ -353,8 +353,13 @@ body, ul, ol, dl {
 /////////////////////////////////////////////////////////////////////
 // product slide test //
 
+.product-show-full-container {
+  display: grid;
+  place-items: center;
+}
 
 .grid-slide {
+  width: 70vw;
   height: 800px;
   margin: 50px;
   display: grid;
@@ -385,7 +390,7 @@ body, ul, ol, dl {
 
 .thumb-slide-horizontal li {
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.60;
 
     &:hover {
       opacity: 1;
