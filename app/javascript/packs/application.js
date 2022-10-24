@@ -8,6 +8,8 @@
 require("util")
 import { initSmoothScroll } from "./plugins/smoothScroll"
 import { initNavShow } from "./plugins/initNavShow"
+import { initSlides } from "./plugins/initSlides"
+import { carouselTest } from "./plugins/carouselTest"
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
@@ -28,11 +30,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 document.addEventListener('turbolinks:load', () => {
-  // initSmoothScroll()
+
 });
-
-// Configure Stimulus development experience
-// application.debug = false
-// window.Stimulus   = application
-
-// export { application }
