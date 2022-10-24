@@ -29,11 +29,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 document.addEventListener('turbolinks:load', () => {
-  // initSmoothScroll()
+
 });
-
-// Configure Stimulus development experience
-// application.debug = false
-// window.Stimulus   = application
-
-// export { application }
