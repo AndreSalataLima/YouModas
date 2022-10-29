@@ -6,7 +6,6 @@ function initSlides(index) {
 
     slideMainImg.forEach((img) => {
       img.classList.remove("active");
-
     });
 
   slideMainImg[index].classList.add("active");

@@ -380,6 +380,11 @@ body, ul, ol, dl {
   background-position: center;
   background-size: cover;
   grid-row: 2;
+
+    &:hover {
+      height: 118px;
+      width: 118px;
+    }
 }
 
 .thumb-slide-horizontal {
@@ -390,7 +395,7 @@ body, ul, ol, dl {
 
 .thumb-slide-horizontal li {
   cursor: pointer;
-  opacity: 0.60;
+  opacity: 0.40;
 
     &:hover {
       opacity: 1;
