@@ -37,3 +37,7 @@ document.addEventListener('turbolinks:load', () => {
 // https://mlens.musings.it/
 // plugin jquery para adicionar lupa de zoom nas imagens dos produtos
 // precisa verificar o jquery se esta ativo, e se o pluggin estao funcionando bem
+
+
+// to do:
+// get the seeds implementation by Andre and start to do the final homepage.
