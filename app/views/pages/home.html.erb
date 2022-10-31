@@ -3,10 +3,15 @@
   <%= link_to "/", class: "header-logo" do %>
     <%= image_tag "LOGOTIPO1.png" %>
   <% end %>
-  <div class="header-search-bar">
+  <form class="search-bar-container" onsubmit="event.preventDefault();" role="search">
+    <label class="search-bar-label" for="search">Search for stuff</label>
+    <input class="search-bar-input" id="search" type="search" placeholder="Search..." autofocus required />
+    <button class="search-bar-btn" type="submit"><i class="fas fa-search"></i></button>
+  </form>
+  <%# <div class="header-search-bar">
     <input type="search" id="site-search" name="q">
     <button class="header-search-btn">Search</button>
-  </div>
+  </div> %>
 </header>
 
 <%# DIVIDER %>
