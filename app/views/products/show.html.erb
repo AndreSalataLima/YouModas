@@ -32,15 +32,10 @@
   <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans">
   <div class="card-product-infos">
     <h2>Product name</h2>
-    <p class="price">R$129.99</p>
+    <p class="price">R$<%= @product.price %></p>
     <p>Some text about the jeans..</p>
   </div>
 </div>
-
-<h2><%= "name" %></h2>
-<h2><%= @product.name %></h2>
-<p><%= "price" %></p>
-<p><%= @product.price %></p>
 
 <%# DIVIDER %>
 
@@ -144,12 +139,16 @@
             </div>
 
 <%# ------------ /GALLERY SLIDER  -------------------%>
+<h2><%= "name" %></h2>
+<h2><%= @product.name %></h2>
+<p><%= "price" %></p>
+<p><%= @product.price %></p>
 
             </div>
             <div class="info">
               <div class="shoeName">
                 <div>
-                  <h1 class="big">Product name</h1>
+                  <h1 class="big"><%= @product.name %></h1>
                   <span class="new">new</span>
                 </div>
                 <h3 class="small">Product "headline"</h3>
@@ -157,8 +156,8 @@
               <div class="description">
                 <h3 class="title">Product Info</h3>
                 <p class="text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's.
+                  <%= @product.description %>
+
                 </p>
               </div>
               <div class="color-container">
@@ -188,13 +187,18 @@
               <div class="buy-price">
                 <a href="#" class="buy">
                   <span class="priceBtn"></span>
-                  <i class="fas fa-shopping-cart"></i>
-                  Add to card
+
+
+                  </i>
+                  Comprar
                 </a>
+                <%= link_to "Comprar", "https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, #{@product.name}, gostaria de agendar uma consulta para o dia", class:"fas fa-shopping-cart priceBtn", target:"_blank"%>
+
+
                 <div class="price">
                   <h1>
                     <i class="fas fa-real-sign"></i>
-                    R$129.99
+                    R$<%= @product.price %>
                   </h1>
                 </div>
               </div>
@@ -260,7 +264,7 @@
     <div class="info">
       <div class="shoeName">
         <div>
-          <h1 class="big">Product name</h1>
+          <h1 class="big"><%= @product.name %></h1>
           <span class="new">new</span>
         </div>
           <h3 class="small">Product "headline"</h3>
@@ -268,8 +272,7 @@
         <div class="description">
           <h3 class="title">Product Info</h3>
           <p class="text">
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's.
+            <%= @product.description %>
           </p>
         </div>
         <div class="color-container">
@@ -293,15 +296,18 @@
           </div>
         </div>
         <div class="buy-price">
-          <a href="#" class="buy">
-            <span class="priceBtn"></span>
-            <i class="fas fa-shopping-cart"></i>
-              Add to card
-          </a>
+                <a href="#" class="buy">
+                  <span class="priceBtn"></span>
+
+
+                  </i>
+                  Comprar
+                </a>
+                <%= link_to "Comprar", "https://api.whatsapp.com/send?phone=+5516996352667&text=Olá, #{@product.name}, gostaria de agendar uma consulta para o dia", class:"fas fa-shopping-cart priceBtn", target:"_blank"%>
           <div class="price">
             <h1>
             <i class="fas fa-real-sign"></i>
-              R$129.99
+              R$<%= @product.price %>
             </h1>
           </div>
         </div>
