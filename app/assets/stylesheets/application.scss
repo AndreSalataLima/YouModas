@@ -26,3 +26,14 @@
 
 // CSS PARTIALS
 @import "pages/home";
+
+
+
+// local fonts
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/app/assets/fonts/Metropolis/EOT/Metropolis-Black.eot");
+  src: url("/app/assets/fonts/Metropolis/WOFF/Metropolis-Black.woff") format("woff"),
+  url("/app/assets/fonts/Metropolis/WOFF2/Metropolis-Black.woff2") format("woff2"),
+  }
