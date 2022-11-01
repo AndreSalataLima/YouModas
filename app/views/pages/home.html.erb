@@ -21,6 +21,11 @@
 
 <%# NAV-LINKS  %>
 <nav class="js-nav js-navDontShow" js-navDontShow>
+  <div class="nav-link-logo">
+    <%= link_to "/",  class: "nav-link-logo-link" do %>
+      <%= image_tag "logo.png", class: "nav-logo-img" %>
+    <% end %>
+  </div>
   <ul class="nav-list">
     <li class="nav-list-links"><a href="/" class="nav-each-link">Blusas</a></li>
     <li class="nav-list-links"><a href="/" class="nav-each-link">Calças</a></li>
@@ -29,6 +34,11 @@
     <li class="nav-list-links"><a href="/" class="nav-each-link">Vestidos</a></li>
     <li class="nav-list-links"><a href="/" class="nav-each-link">Acessórios</a></li>
   </ul>
+  <div class="nav-link-logo">
+    <%= link_to "/",  class: "nav-link-logo-link" do %>
+      <%= image_tag "logo-footer.png", class: "nav-logo-img" %>
+    <% end %>
+  </div>
 </nav>
 
 <%# BANNER IMG  %>
