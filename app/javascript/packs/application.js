@@ -11,7 +11,7 @@ import { initNavShow } from "./plugins/initNavShow"
 import { initSlideGallery } from "./plugins/initSlideGallery"
 import { initSlides } from "./plugins/initSlides"
 import { initCarouselHome } from "./plugins/initCarouselHome"
-
+import { CarouselTest } from "./plugins/carouselTest"
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
