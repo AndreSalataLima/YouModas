@@ -1,6 +1,6 @@
 const slideList = document.querySelectorAll(".js-slide li");
 const slideMainImg = document.querySelectorAll(".js-main-img div");
-slideMainImg[0].classList.add("active");
+// slideMainImg[0].classList.add("active");
 
 function initSlides(index) {
 
@@ -17,3 +17,5 @@ slideList.forEach((thumb, index) => {
     initSlides(index);
   })
 });
+
+initSlides(0);
