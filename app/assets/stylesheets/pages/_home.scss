@@ -111,19 +111,40 @@ body, ul, ol, dl {
 }
 
 .nav-each-link {
-  font-family: 'metropolis-semi-bold', sans-serif;
+  font-family: 'Metropolis-semi-bold', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 2px;
-  padding: 0 25px;
-  margin: 10px 0;
+  // padding: 0 25px;
+  margin: 10px 20px;
   color: #C5C5C5;
   text-decoration: none;
   align-items: center;
 
-    &:hover {
-      color: white;
+  display: inline-block;
+  position: relative;
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: -1px;
+      color: #C68F85;
       background-color: #C68F85;
-      border-radius: 3px;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover {
+      color: #C68F85;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
 }
 
@@ -144,6 +165,7 @@ body, ul, ol, dl {
   padding: 10px 20px;
   justify-content: space-between;
   z-index: 10;
+  border-bottom: 2px solid #c68f854e;
 }
 
 
@@ -236,7 +258,7 @@ body, ul, ol, dl {
 // CARDS
 
 .products-cards-title {
-  font-family: 'metropolis-semi-bold', sans-serif;
+  font-family: 'Metropolis-semi-bold', sans-serif;
   letter-spacing: 3px;
   color: #C5C5C5;
   display: flex;
