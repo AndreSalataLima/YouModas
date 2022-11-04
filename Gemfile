@@ -64,10 +64,18 @@ gem "font-awesome-sass", "~> 6.2.0"
 
 # Webpack to manage JavaScript modules
 gem 'webpack-rails', '~> 0.9.11'
+
 gem 'webpacker', '~> 5.0'
+
+# Rails Favicon generate gem
+# gem 'rails_real_favicon'
+
+# JSON implementation as a Ruby extension in C
+# gem 'json', '~> 2.6', '>= 2.6.2'
 
 # # This gem provides rails-ujs driver for Rails applications.
 # gem 'rails-ujs', '~> 0.1.0'
+
 
 
 group :development, :test do

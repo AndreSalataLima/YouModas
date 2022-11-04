@@ -13,16 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+
+ // External Libraries
+ @import "font-awesome";
+ @import "bootstrap";
+
+ // Font imports
+ @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+ // font-family: 'Bungee Spice', cursive;
+
+ @import url("https://www.dafontfree.net/embed/bWV0cm9wb2xpcy1zZW1pLWJvbGQmZGF0YS81Mi9tLzE1NjgwMi9NZXRyb3BvbGlzLVNlbWlCb2xkLm90Zg");
+ // font-family: 'metropolis-semi-bold', sans-serif;
+
+
+ // CSS PARTIALS
+ @import "pages/home";
  @import "pages/product";
  @import "pages/product_show";
+ @import "components/index";
 
-// External Libraries
-@import "font-awesome";
-@import "bootstrap";
 
-// Font imports
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-// font-family: 'Bungee Spice', cursive;
 
-// CSS PARTIALS
-@import "pages/home";
+// local fonts
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/app/assets/fonts/Metropolis/EOT/Metropolis-Black.eot");
+  src: url("/app/assets/fonts/Metropolis/WOFF/Metropolis-Black.woff") format("woff"),
+  url("/app/assets/fonts/Metropolis/WOFF2/Metropolis-Black.woff2") format("woff2"),
+  }
