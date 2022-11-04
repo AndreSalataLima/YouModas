@@ -4,15 +4,18 @@
   <%= link_to "/", class: "header-logo" do %>
     <%= image_tag "LOGOTIPO1.png" %>
   <% end %>
+
   <form class="search-bar-container" onsubmit="event.preventDefault();" role="search">
     <label class="search-bar-label" for="search">Search for stuff</label>
-    <input class="search-bar-input" id="search" type="search" placeholder="Search..." autofocus required />
-    <button class="search-bar-btn" type="submit"><i class="fas fa-search"></i></button>
+    <input class="search-bar-input" id="search" type="search" placeholder="Procurar..." autofocus required />
+    <button class="search-bar-btn" type="submit"><i class="fas fa-search" style="color: white;"></i></button>
   </form>
-  <%# <div class="header-search-bar">
-    <input type="search" id="site-search" name="q">
-    <button class="header-search-btn">Search</button>
-  </div> %>
+
+  <div class="header-cart-container">
+    <%= link_to "/", class: "cartbag-link" do %>
+      <%= image_tag "cartbag-icon.png", class: "cartbag-img" %>
+      <% end %>
+  </div>
 </header>
 
 
@@ -41,16 +44,16 @@
     <li class="nav-list-links"><a href="/" class="nav-each-link">VESTIDOS</a></li>
     <li class="nav-list-links"><a href="/" class="nav-each-link">ACESSÓRIOS</a></li>
   </ul>
-  <div class="nav-link-logo">
-    <%= link_to "/",  class: "nav-link-logo-link" do %>
-      <%= image_tag "logo-footer.png", class: "nav-logo-img" %>
-    <% end %>
+  <div class="nav-cart-container">
+    <%= link_to "/", class: "nav-cartbag-link" do %>
+      <%= image_tag "cartbag-icon.png", class: "nav-cartbag-img" %>
+      <% end %>
   </div>
 </nav>
 
 
 
-<%# BANNER IMG  %>
+<%# HOME CAROUSEL %>
 
 <section class="carousel-wrapper"></section>
   <button class="carousel-arrow" id="carousel-arrow-prev">
@@ -61,15 +64,9 @@
   </button>
 
   <ul class="main-banner carousel-container" id="carousel-container">
-    <li class="carousel-slide">
-      <%# <img class="main-banner-img" src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt=""> %>
-    </li>
-    <li class="carousel-slide">
-      <%# <img class="main-banner-img" src="https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80" alt=""> %>
-    </li>
-    <li class="carousel-slide">
-      <%# <img class="main-banner-img" src="https://images.unsplash.com/photo-1483181994834-aba9fd1e251a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt=""> %>
-    </li>
+    <li class="carousel-slide"></li>
+    <li class="carousel-slide"></li>
+    <li class="carousel-slide"></li>
   </ul>
 </section>
 
