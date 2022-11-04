@@ -18,7 +18,7 @@
 .search-bar-container {
   position: relative;
   width: 30rem;
-  background: #c68f8500;
+  background: #fedbca30;
   border-radius: 5px;
   border: 1px solid #C68F85;
 }
@@ -33,9 +33,10 @@
 
 .search-bar-input[type="search"] {
   outline: 0;
+  color: #979191d6;
   width: 100%;
   background: #fedbca30;
-  padding: 0 1.6rem;
+  padding: 0 1.2rem;
   border-radius: 5px;
   appearance: none;
   transition: all 0.2s cubic-bezier(0, 0, 0.43, 1.49);
@@ -63,6 +64,12 @@
   }
 }
 
+.search-lupa-icon {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
 .search-bar-label {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -76,7 +83,7 @@
 // CART-ICON
 
 .cartbag-img {
-  width: 120px;
+  width: 100px;
   opacity: 0.65;
   margin: 0;
   padding: 0;
@@ -93,11 +100,12 @@
 .divider-container {
   display: grid;
   place-items: center;
+  margin-bottom: 4px;
 }
 
 .nav-divider {
-  background-color: #C68F85;
-  height: 3px;
+  background-color: #c58e84a7;
+  height: 2px;
   width: 65vw;
-  border-radius: 20%;
+  border-radius: 90px;
 }

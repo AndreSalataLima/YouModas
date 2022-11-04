@@ -1,46 +1,46 @@
-let sliderContainer = document.querySelector('.slider-container');
-let innerSlider = document.querySelector('.inner-slider');
+// let sliderContainer = document.querySelector('.slider-container');
+// let innerSlider = document.querySelector('.inner-slider');
 
-let pressed = false;
-let startX;
-let x;
+// let pressed = false;
+// let startX;
+// let x;
 
-sliderContainer.addEventListener("mousedown", (e) => {
-  pressed = true;
-  startX = e.offsetX - innerSlider.offsetLeft;
-  sliderContainer.style.cursor = "grabbing";
-});
-
-// sliderContainer.addEventListener("mouseenter", () => {
-//   // sliderContainer.style.cursor = "grab";
+// sliderContainer.addEventListener("mousedown", (e) => {
+//   pressed = true;
+//   startX = e.offsetX - innerSlider.offsetLeft;
+//   sliderContainer.style.cursor = "grabbing";
 // });
 
-sliderContainer.addEventListener("mouseup", () => {
-  sliderContainer.style.cursor = "grab";
-  pressed = false;
-});
+// // sliderContainer.addEventListener("mouseenter", () => {
+// //   // sliderContainer.style.cursor = "grab";
+// // });
 
-const checkBoundary = () => {
-  let outer = sliderContainer.getBoundingClientRect();
-  let inner = innerSlider.getBoundingClientRect();
+// sliderContainer.addEventListener("mouseup", () => {
+//   sliderContainer.style.cursor = "grab";
+//   pressed = false;
+// });
 
-  if (parseInt(innerSlider.style.left) > 0) {
-      innerSlider.style.left = "0px";
-  }
+// const checkBoundary = () => {
+//   let outer = sliderContainer.getBoundingClientRect();
+//   let inner = innerSlider.getBoundingClientRect();
 
-  if (inner.right < outer.right) {
-      innerSlider.style.left = `-${inner.width - outer.width}px`;
-  }
-};
+//   if (parseInt(innerSlider.style.left) > 0) {
+//       innerSlider.style.left = "0px";
+//   }
+
+//   if (inner.right < outer.right) {
+//       innerSlider.style.left = `-${inner.width - outer.width}px`;
+//   }
+// };
 
 
 
-sliderContainer.addEventListener("mousemove", (e) => {
-  if (!pressed) return;
-  e.preventDefault();
+// sliderContainer.addEventListener("mousemove", (e) => {
+//   if (!pressed) return;
+//   e.preventDefault();
 
-  x = e.offsetX;
+//   x = e.offsetX;
 
-  innerSlider.style.left = `${x - startX}px`;
-  checkBoundary();
-});
+//   innerSlider.style.left = `${x - startX}px`;
+//   checkBoundary();
+// });

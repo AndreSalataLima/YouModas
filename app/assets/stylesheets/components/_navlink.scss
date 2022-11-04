@@ -1,7 +1,7 @@
 // NAV LINKS //
 
 .nav-logo-img {
-  width: 55px;
+  width: 50px;
 }
 
 .nav-list {
@@ -20,13 +20,11 @@
 .nav-each-link {
   font-family: 'Metropolis-semi-bold', sans-serif;
   font-size: 1.1rem;
-  letter-spacing: 2px;
-  // padding: 0 25px;
+  letter-spacing: 1.5px;
   margin: 10px 20px;
   color: #7c7c7c;
   text-decoration: none;
   align-items: center;
-
   display: inline-block;
   position: relative;
 
@@ -39,14 +37,14 @@
       height: 2px;
       bottom: 0;
       left: -1px;
-      color: #C68F85;
-      background-color: #C68F85;
+      color: #C58E84;
+      background-color: #C58E84;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
 
     &:hover {
-      color: #C68F85;
+      color: #C58E84;
     }
 
     &:hover::after {
@@ -73,7 +71,6 @@
 
 .js-navShow {
   background-color: #EFEFEF;
-  // box-shadow: 0 1px rgba(171, 109, 109, 0.06);
   display: flex;
   position: sticky;
   width: 100vw;
@@ -81,5 +78,5 @@
   padding: 10px 20px;
   justify-content: space-between;
   z-index: 10;
-  border-bottom: 2px solid #c68f854e;
+  border-bottom: 2px solid #c58e8483;
 }
