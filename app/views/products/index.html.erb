@@ -1,12 +1,17 @@
+
 <ul>
   <div class="card">
-    <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%">
-    <h1>Tailored Jeans</h1>
-      <p class="price">R$129.99</p>
-      <p>Some text about the jeans..</p>
-      <%= link_to "View more", "/products/show" %>
-      <p><button link_to>Add to Cart</button></p>
+    <% @products.each do |product| %>
+      <img src="https://cdn.shopify.com/s/files/1/0615/7913/products/PNG01137-web_400x400_crop_center.jpg?v=1661316048" alt="Denim Jeans" style="width:100%">
+      <h1><%= product.name %></h1>
+        <p class="price">R$<%= product.price %></p>
+        <p><%= product.description %></p>
+        <%= link_to "View more", "/products/#{product.id}" %>
+        <p><button link_to>Add to Cart</button></p>
+    <% end %>
   </div>
+</ul>
+
 
   <%# ADD .EACH FOR PRODUCT %>
   <%# <% @products.each do |product| %>
@@ -21,5 +26,3 @@
               <%# <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %>
         <%# <% end</td> %>
   <%# <% end %>
-
-</ul>

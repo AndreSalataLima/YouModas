@@ -5,7 +5,11 @@ class ProductsController < ApplicationController
   end
 
   def show
-    # @products = Product.all(params[:id])
+    @product = Product.find(params[:id])
   end
+
+  # def products_params
+    # params.require(:products).permit(:name, :price, :image, :size, :color, :description, :category_id)
+  # end
 
 end
