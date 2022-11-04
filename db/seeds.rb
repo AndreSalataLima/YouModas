@@ -19,7 +19,7 @@ example = 1
         price: example,
         image: "image #{example}",
         size: "size #{example}",
-        color: "color #{example}",
+        color: "blue green red orange black",
         description: "description #{example}"
       )
     example += 1
