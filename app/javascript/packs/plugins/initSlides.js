@@ -4,8 +4,8 @@ const slideMainImg = document.querySelectorAll(".js-main-img div");
 
 function initSlides(index) {
 
-    slideMainImg.forEach((img) => {
-      img.classList.remove("active");
+    slideMainImg.forEach((div) => {
+      div.classList.remove("active");
     });
 
   slideMainImg[index].classList.add("active");

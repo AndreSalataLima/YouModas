@@ -190,7 +190,7 @@ body {
 }
 
 .info {
-  width: 50%;
+  width: 100%;
   background-color: #fff;
   z-index: 1;
   padding: 35px 40px;
@@ -505,9 +505,9 @@ body {
     left: 10px;
   }
 
-  .info {
-    padding: 20px;
-  }
+  // .info {
+  //   padding: 20px;
+  // }
 }
 
 @media (max-width: 414px) {
