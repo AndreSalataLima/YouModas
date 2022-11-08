@@ -73,5 +73,6 @@ if (document.querySelectorAll(".carousel").length > 0) {
 
     carouselHoverEffect();
     carouselClick();
+    newCarousel(carousel);
   }
 }
