@@ -5,3 +5,7 @@ import "custom/homeCarousel"
 import "custom/navLink"
 import "custom/gridBanner"
 import "custom/productSlide"
+import { Turbo } from "@hotwired/turbo-rails"
+
+
+Turbo.session.drive = false;

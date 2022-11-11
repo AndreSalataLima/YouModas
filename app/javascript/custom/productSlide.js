@@ -11,14 +11,14 @@ function initSlides(index) {
 
   slideMainImg[index].classList.add("active");
 
-  slideList.forEach((thumb, index) => {
-    thumb.addEventListener("click", () => {
-      initSlides(index);
-    })
-    console.log("inside-forEach-slideList");
-  });
 
 }
 
+slideList.forEach((thumb, index) => {
+  thumb.addEventListener("click", () => {
+    initSlides(index);
+  })
+  console.log("inside-forEach-slideList");
+});
 
 // initSlides(0);
