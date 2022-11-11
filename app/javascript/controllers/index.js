@@ -2,12 +2,6 @@
 // // Run that command whenever you add a new controller or create them with
 // // ./bin/rails generate stimulus controllerName
 
-// import { application } from "./application"
-
-console.log("test!");
-
-
-
 
 // Import and register all your controllers from the importmap under controllers/*
 
