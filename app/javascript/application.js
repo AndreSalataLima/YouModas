@@ -5,6 +5,7 @@ import "custom/homeCarousel"
 import "custom/navLink"
 import "custom/gridBanner"
 import "custom/productSlide"
+// import "custom/initFilterCategories.js"
 import { Turbo } from "@hotwired/turbo-rails"
 
 
