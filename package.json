@@ -8,10 +8,12 @@
     "@rails/activestorage": "^7.0.4",
     "@rails/ujs": "^7.0.4",
     "activestorage": "^5.2.8-1",
-    "bootstrap": "^5.2.2"
+    "bootstrap": "^5.2.2",
+    "sass": "^1.56.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/application.css --no-source-map"
   },
   "devDependencies": {
     "webpack-dev-server": "^3"
